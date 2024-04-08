@@ -16,7 +16,10 @@ public class member {
 
     @NonNull
     @Column(unique = true, length = 10)
-    private String personName;
-    @Column(name="person_age")
-    private int age;
+    private String username;
+
+    private String password;
+
+    @Column(unique = true)
+    private String name;
 }
